@@ -1,5 +1,5 @@
 # Libra
-Library Management System
+Library Management App
 
 Copyright ©️ 2022
 
