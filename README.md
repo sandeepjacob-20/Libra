@@ -1,4 +1,8 @@
 # Libra
-Library Management System.
-Author "sandeep kurian jacob".
-Project date : 18/01/2022.
+Library Management System
+
+Copyright ©️ 2022
+
+Written by: Sandeep Kurian Jacob
+
+Institution: SCMS School Of Engneering and Technology 
