@@ -32,7 +32,7 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try{
                     bookmodel new_book = new bookmodel(id.getText().toString().trim(),name.getText().toString().trim(),author.getText().toString().trim(),genre.getText().toString().trim());
-                    Toast.makeText(AddActivity.this,"book added.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddActivity.this,"Book Added",Toast.LENGTH_LONG).show();
                 }
                 catch(Exception e){
                     Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
