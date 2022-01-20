@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/bookgenre"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="Genre"
+        android:textColor="@color/white"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:text="Book Name"
+        android:textColor="@color/white"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <TextView
+        android:id="@+id/bookauthor"
+        android:layout_width="103dp"
+        android:layout_height="20dp"
+        android:text="Book Author"
+        android:textColor="@color/white"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:text="Book Details"
+        android:textColor="@color/yellow"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/bookid"
+        android:layout_width="71dp"
+        android:layout_height="18dp"
+        android:text="Book ID "
+        android:textColor="@color/white"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="193dp"
+        android:layout_height="18dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="193dp"
+        android:layout_height="18dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Book Name"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <EditText
+        android:id="@+id/author"
+        android:layout_width="193dp"
+        android:layout_height="18dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Author"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <EditText
+        android:id="@+id/genre"
+        android:layout_width="193dp"
+        android:layout_height="18dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Genre"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="77dp"
+        android:layout_height="31dp"
+        android:background="@drawable/rounded_bg"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="31dp"
+        android:layout_height="19dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
