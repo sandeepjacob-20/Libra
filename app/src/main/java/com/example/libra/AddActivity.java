@@ -34,11 +34,15 @@ public class AddActivity extends AppCompatActivity {
                     DataBaseHelper db = new DataBaseHelper(AddActivity.this);
                     boolean res = db.addOne(new_book);
                     if(res){
-                        Toast.makeText(AddActivity.this,"yo help",Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddActivity.this,"Book Added",Toast.LENGTH_LONG).show();
                     }
                     else{
                         Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
                     }
+                    id.setText("");
+                    name.setText("");
+                    author.setText("");
+                    genre.setText("");
             }
         });
         back = (ImageButton) findViewById(R.id.back);

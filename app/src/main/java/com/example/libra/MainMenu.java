@@ -18,10 +18,18 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         add = (Button) findViewById(R.id.add);
+        catalogue = (Button) findViewById(R.id.catalogue);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this,AddActivity.class);
+                startActivity(intent);
+            }
+        });
+        catalogue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenu.this,ViewActivity.class);
                 startActivity(intent);
             }
         });
