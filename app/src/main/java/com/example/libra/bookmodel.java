@@ -15,7 +15,9 @@ public class bookmodel {
     public bookmodel(){
 
     }
-
+    public boolean empty_check(){
+        return book_id.isEmpty();
+    }
     public String getBook_id() {
         return book_id;
     }

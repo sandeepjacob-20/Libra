@@ -30,13 +30,15 @@ public class AddActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try{
                     bookmodel new_book = new bookmodel(id.getText().toString().trim(),name.getText().toString().trim(),author.getText().toString().trim(),genre.getText().toString().trim());
-                    Toast.makeText(AddActivity.this,"Book Added",Toast.LENGTH_LONG).show();
-                }
-                catch(Exception e){
-                    Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
-                }
+                    DataBaseHelper db = new DataBaseHelper(AddActivity.this);
+                    boolean res = db.addOne(new_book);
+                    if(res){
+                        Toast.makeText(AddActivity.this,"yo help",Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
+                    }
             }
         });
         back = (ImageButton) findViewById(R.id.back);
