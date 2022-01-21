@@ -10,7 +10,7 @@ import android.view.View;
 import android.content.Intent;
 
 public class MainMenu extends AppCompatActivity {
-    public Button add,edit,delete,search;
+    public Button add,catalogue,delete,search;
     public ImageButton exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
