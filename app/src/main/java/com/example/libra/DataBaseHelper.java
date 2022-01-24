@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -97,12 +98,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     }
 
     public boolean deleteOne(String term) {
-        String query = "DELETE FROM " + BOOK_TABLE + "WHERE " + COLUMN_BOOK_ID + " = '" + term + "'";
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-        if(cursor.moveToFirst())
-            return true;
-        else
-            return false;
+        return db.delete(BOOK_TABLE, COLUMN_BOOK_ID + "=?", new String[]{term}) > 0;
     }
 }

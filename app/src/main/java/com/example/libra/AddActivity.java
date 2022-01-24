@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.widget.Toast;
 import org.w3c.dom.Text;
 
+import java.io.IOException;
+
 public class AddActivity extends AppCompatActivity {
         public ImageButton back;
         public Button submit;
@@ -30,19 +32,29 @@ public class AddActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    bookmodel new_book = new bookmodel(id.getText().toString().trim(),name.getText().toString().trim(),author.getText().toString().trim(),genre.getText().toString().trim());
-                    DataBaseHelper db = new DataBaseHelper(AddActivity.this);
-                    boolean res = db.addOne(new_book);
-                    if(res){
-                        Toast.makeText(AddActivity.this,"Book Added",Toast.LENGTH_LONG).show();
+                    try{
+
+                        String null_check = id.getText().toString().trim();
+                        if(null_check.isEmpty())
+                            throw new Exception();
+                        bookmodel new_book = new bookmodel(id.getText().toString().trim(),name.getText().toString().trim(),author.getText().toString().trim(),genre.getText().toString().trim());
+                        DataBaseHelper db = new DataBaseHelper(AddActivity.this);
+                        boolean res = db.addOne(new_book);
+                        if(res){
+                            Toast.makeText(AddActivity.this,"Book Added",Toast.LENGTH_LONG).show();
+                        }
+                        else{
+                            Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
+                        }
+                        id.setText("");
+                        name.setText("");
+                        author.setText("");
+                        genre.setText("");
                     }
-                    else{
-                        Toast.makeText(AddActivity.this,"Error adding book",Toast.LENGTH_SHORT).show();
+                    catch(Exception e)
+                    {
+                        Toast.makeText(AddActivity.this, "Error Adding Book", Toast.LENGTH_SHORT).show();
                     }
-                    id.setText("");
-                    name.setText("");
-                    author.setText("");
-                    genre.setText("");
             }
         });
         back = (ImageButton) findViewById(R.id.back);
