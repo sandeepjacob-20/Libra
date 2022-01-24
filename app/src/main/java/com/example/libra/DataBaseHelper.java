@@ -77,7 +77,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public List<bookmodel> search(String term) {
         List<bookmodel> result = new ArrayList<>();
-        String query = "SELECT * FROM " + BOOK_TABLE + " WHERE " + COLUMN_BOOK_NAME + " = '" + term + "'";
+        String query = "SELECT * FROM " + BOOK_TABLE + " WHERE " + COLUMN_BOOK_NAME + " LIKE '%" + term + "%'";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         if(cursor.moveToFirst()){
@@ -94,5 +94,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return result;
+    }
+
+    public boolean deleteOne(String term) {
+        String query = "DELETE FROM " + BOOK_TABLE + "WHERE " + COLUMN_BOOK_ID + " = '" + term + "'";
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst())
+            return true;
+        else
+            return false;
     }
 }

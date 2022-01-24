@@ -20,6 +20,7 @@ public class MainMenu extends AppCompatActivity {
         add = (Button) findViewById(R.id.add);
         catalogue = (Button) findViewById(R.id.catalogue);
         search = (Button) findViewById(R.id.search);
+        delete = (Button) findViewById(R.id.delete);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,13 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenu.this,DeleteActivity.class);
                 startActivity(intent);
             }
         });

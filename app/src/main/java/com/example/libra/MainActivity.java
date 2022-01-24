@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                if(username.getText().toString().equals("admin")&&password.getText().toString().equals("12345"))
+                if(username.getText().toString().trim().equals("admin")&&password.getText().toString().trim().equals("12345"))
                 {
                     Intent intent = new Intent(MainActivity.this,MainMenu.class);
                     startActivity(intent);
