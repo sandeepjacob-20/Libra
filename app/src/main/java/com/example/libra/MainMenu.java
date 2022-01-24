@@ -19,6 +19,8 @@ public class MainMenu extends AppCompatActivity {
 
         add = (Button) findViewById(R.id.add);
         catalogue = (Button) findViewById(R.id.catalogue);
+        search = (Button) findViewById(R.id.search);
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +35,14 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        exit = (ImageButton) findViewById(R.id.exit);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenu.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        exit = (ImageButton) findViewById(R.id.back);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

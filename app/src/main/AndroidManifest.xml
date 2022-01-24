@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Libra">
         <activity
-            android:name=".ViewActivity"
+            android:name=".SearchActivity"
             android:exported="false"
             android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".ViewActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenu" />
         <activity
             android:name=".AddActivity"
             android:exported="false"

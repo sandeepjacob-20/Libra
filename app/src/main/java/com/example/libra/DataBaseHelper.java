@@ -74,4 +74,25 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db.close();
         return returnlist;
     }
+
+    public List<bookmodel> search(String term) {
+        List<bookmodel> result = new ArrayList<>();
+        String query = "SELECT * FROM " + BOOK_TABLE + " WHERE " + COLUMN_BOOK_NAME + " = '" + term + "'";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            do{
+                String ID = cursor.getString(0);
+                String name = cursor.getString(1);
+                String author = cursor.getString(2);
+                String genre = cursor.getString(3);
+
+                bookmodel new_book = new bookmodel(ID,name,author,genre);
+                result.add(new_book);
+            }while(cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return result;
+    }
 }
