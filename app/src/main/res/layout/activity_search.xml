@@ -23,8 +23,8 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="49dp"
-        android:layout_height="33dp"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
