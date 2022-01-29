@@ -11,6 +11,7 @@
         android:id="@+id/textView3"
         android:layout_width="146dp"
         android:layout_height="51dp"
+        android:fontFamily="@font/mouse"
         android:text="Book List"
         android:textColor="@color/white"
         app:autoSizeTextType="uniform"
