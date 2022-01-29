@@ -50,6 +50,7 @@ public class AddActivity extends AppCompatActivity {
                         name.setText("");
                         author.setText("");
                         genre.setText("");
+                        finish();
                     }
                     catch(Exception e)
                     {

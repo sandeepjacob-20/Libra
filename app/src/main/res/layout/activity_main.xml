@@ -11,6 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="152dp"
         android:layout_height="74dp"
+        android:fontFamily="@font/cardives"
         android:text="Libra"
         android:textColor="@color/white"
         app:autoSizeTextType="uniform"
@@ -19,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.718"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.188" />
 
     <ImageView
         android:layout_width="114dp"
@@ -78,6 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/mouse"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/mouse"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

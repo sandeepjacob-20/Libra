@@ -40,8 +40,10 @@ public class SignupActivity extends AppCompatActivity {
                             UserModel new_user = new UserModel(user_name.getText().toString().trim(), user_check, pass.getText().toString().trim());
                             DataBaseHelper db = new DataBaseHelper(SignupActivity.this);
                             boolean result = db.addUser(new_user);
-                            if (result)
+                            if (result) {
                                 Toast.makeText(SignupActivity.this, "User added", Toast.LENGTH_SHORT).show();
+                                finish();
+                            }
                             else
                                 Toast.makeText(SignupActivity.this, "Error adding user", Toast.LENGTH_SHORT).show();
                         }

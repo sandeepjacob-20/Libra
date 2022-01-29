@@ -28,8 +28,10 @@ public class DeleteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DataBaseHelper db = new DataBaseHelper(DeleteActivity.this);
                 String value = id_value.getText().toString().trim();
-                if(db.deleteOne(value))
+                if(db.deleteOne(value)) {
                     Toast.makeText(DeleteActivity.this, value + " Deleted", Toast.LENGTH_SHORT).show();
+                    id_value.setText("");
+                }
                 else
                     Toast.makeText(DeleteActivity.this, value + " not found", Toast.LENGTH_SHORT).show();
             }
