@@ -96,4 +96,16 @@
         app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <Button
+        android:id="@+id/easter"
+        android:layout_width="88dp"
+        android:layout_height="17dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

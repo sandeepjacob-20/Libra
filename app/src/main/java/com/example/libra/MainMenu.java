@@ -13,7 +13,7 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
-    public Button add,catalogue,delete,search;
+    public Button add,catalogue,delete,search,easter;
     public ImageButton exit;
     public Toast exitToast;
     @Override
@@ -62,6 +62,15 @@ public class MainMenu extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 System.exit(0);
+            }
+        });
+
+        easter = (Button) findViewById(R.id.easter);
+        easter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),easteregg.class);
+                startActivity(intent);
             }
         });
     }
