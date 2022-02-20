@@ -54,7 +54,7 @@ public class MainMenu extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(MainMenu.this, MainActivity.class);
             }
         });
     }

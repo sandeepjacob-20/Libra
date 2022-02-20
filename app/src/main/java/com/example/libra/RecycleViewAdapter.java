@@ -33,10 +33,10 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.id.setText(booklist.get(position).getBook_id());
+        holder.id.setText("ID : "+booklist.get(position).getBook_id());
         holder.name.setText(booklist.get(position).getBook_name());
-        holder.author.setText(booklist.get(position).getAuthor());
-        holder.genre.setText(booklist.get(position).getGenre());
+        holder.author.setText("Author : "+booklist.get(position).getAuthor());
+        holder.genre.setText("Genre : "+booklist.get(position).getGenre());
     }
 
     @Override
