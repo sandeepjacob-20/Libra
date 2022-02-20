@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 import android.widget.Toast;
-import org.w3c.dom.Text;
-
-import java.io.IOException;
 
 public class AddActivity extends AppCompatActivity {
         public ImageButton back;
@@ -58,7 +55,7 @@ public class AddActivity extends AppCompatActivity {
                     }
             }
         });
-        back = (ImageButton) findViewById(R.id.back);
+        back = (ImageButton) findViewById(R.id.exit_button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

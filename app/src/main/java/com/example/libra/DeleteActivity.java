@@ -44,7 +44,7 @@ public class DeleteActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        back = (ImageButton) findViewById(R.id.back);
+        back = (ImageButton) findViewById(R.id.exit_button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

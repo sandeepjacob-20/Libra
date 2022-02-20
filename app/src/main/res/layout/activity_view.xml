@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.107" />
 
     <ImageButton
-        android:id="@+id/back"
+        android:id="@+id/exit_button"
         android:layout_width="80dp"
         android:layout_height="55dp"
         android:background="@color/black"

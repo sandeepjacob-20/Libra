@@ -5,11 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.view.View;
 import android.content.Intent;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -26,7 +24,7 @@ public class ViewActivity extends AppCompatActivity {
         DataBaseHelper db = new DataBaseHelper(ViewActivity.this);
         List<bookmodel> viewall = db.viewAll();
 
-        back = (ImageButton) findViewById(R.id.back);
+        back = (ImageButton) findViewById(R.id.exit_button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

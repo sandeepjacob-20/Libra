@@ -2,16 +2,20 @@ package com.example.libra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 
+import android.os.Handler;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View;
 import android.content.Intent;
+import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
     public Button add,catalogue,delete,search;
     public ImageButton exit;
+    public Toast exitToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,12 +54,27 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        exit = (ImageButton) findViewById(R.id.back);
+        exit = (ImageButton) findViewById(R.id.exit_button);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, MainActivity.class);
+                exitToast.cancel();
+                finish();
+                System.exit(0);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        exitToast = Toast.makeText(getApplicationContext(),"Press exit button to close", Toast.LENGTH_SHORT);
+        exitToast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                exitToast.cancel();
+            }
+        }, 1000);
     }
 }

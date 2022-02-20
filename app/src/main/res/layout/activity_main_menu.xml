@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.788"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <TextView
         android:id="@+id/textView2"
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.202" />
 
     <Button
         android:id="@+id/add"
@@ -50,7 +50,7 @@
         app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/catalogue"
@@ -65,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.788"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/search"
@@ -80,19 +80,19 @@
         app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <ImageButton
-        android:id="@+id/back"
+        android:id="@+id/exit_button"
         android:layout_width="65dp"
         android:layout_height="36dp"
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.08"
         app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
         tools:ignore="TouchTargetSizeCheck" />
 

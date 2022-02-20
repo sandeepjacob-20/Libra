@@ -11,6 +11,8 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     public Button button,sign_up;
+    private long BackPressedTime;
+    private Toast backToast,loginToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +30,13 @@ public class MainActivity extends AppCompatActivity {
                 if(db.login(username.getText().toString().trim(),password.getText().toString().trim()))
                 {
                     Intent intent = new Intent(MainActivity.this,MainMenu.class);
+                    loginToast.cancel();
                     startActivity(intent);
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this,"login failed",Toast.LENGTH_SHORT).show();
+                    loginToast = Toast.makeText(MainActivity.this,"login failed",Toast.LENGTH_SHORT);
+                    loginToast.show();
                 }
                 username.setText("");
                 password.setText("");
@@ -46,6 +50,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
 
+        if(BackPressedTime + 2000 > System.currentTimeMillis())
+        {
+            backToast.cancel();
+            super.onBackPressed();
+            System.exit(1);
+        }
+        else{
+            backToast = Toast.makeText(MainActivity.this,"Press back again to exit",Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        BackPressedTime = System.currentTimeMillis();
     }
 }
