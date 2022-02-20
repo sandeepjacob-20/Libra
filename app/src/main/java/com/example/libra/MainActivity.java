@@ -12,7 +12,7 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
     public Button button,sign_up;
     private long BackPressedTime;
-    private Toast backToast,loginToast;
+    private Toast backToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 if(db.login(username.getText().toString().trim(),password.getText().toString().trim()))
                 {
                     Intent intent = new Intent(MainActivity.this,MainMenu.class);
-                    loginToast.cancel();
                     startActivity(intent);
                 }
                 else
                 {
-                    loginToast = Toast.makeText(MainActivity.this,"login failed",Toast.LENGTH_SHORT);
-                    loginToast.show();
+                    Toast.makeText(MainActivity.this,"login failed",Toast.LENGTH_SHORT).show();
                 }
                 username.setText("");
                 password.setText("");

@@ -9,48 +9,57 @@
 
     <TextView
         android:id="@+id/bookgenre"
-        android:layout_width="66dp"
-        android:layout_height="22dp"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="2dp"
         android:text="Genre"
         android:textColor="@color/white"
+        android:textSize="15dp"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.562" />
 
     <TextView
         android:id="@+id/bookname"
-        android:layout_width="93dp"
-        android:layout_height="21dp"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="2dp"
         android:text="Book Name"
         android:textColor="@color/white"
+        android:textSize="15dp"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.392" />
 
     <TextView
         android:id="@+id/bookauthor"
         android:layout_width="103dp"
-        android:layout_height="20dp"
+        android:layout_height="40dp"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="2dp"
         android:text="Book Author"
         android:textColor="@color/white"
+        android:textSize="15dp"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <TextView
         android:id="@+id/title"
@@ -68,99 +77,103 @@
 
     <TextView
         android:id="@+id/bookid"
-        android:layout_width="71dp"
-        android:layout_height="18dp"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
         android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="2dp"
         android:text="Book ID "
         android:textColor="@color/white"
+        android:textSize="15dp"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <EditText
         android:id="@+id/id"
-        android:layout_width="193dp"
-        android:layout_height="18dp"
-        android:background="@color/white"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_bg_white"
         android:ems="10"
         android:hint="Enter ID"
         android:inputType="textPersonName"
-        android:textSize="12dp"
         android:paddingLeft="12dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="193dp"
-        android:layout_height="18dp"
-        android:background="@color/white"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_bg_white"
         android:ems="10"
         android:hint="Enter Book Name"
         android:inputType="textPersonName"
-        android:textSize="12dp"
         android:paddingLeft="12dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.392" />
 
     <EditText
         android:id="@+id/author"
-        android:layout_width="193dp"
-        android:layout_height="18dp"
-        android:background="@color/white"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_bg_white"
         android:ems="10"
         android:hint="Enter Author"
         android:inputType="textPersonName"
-        android:textSize="12dp"
         android:paddingLeft="12dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <EditText
         android:id="@+id/genre"
-        android:layout_width="193dp"
-        android:layout_height="18dp"
-        android:background="@color/white"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_bg_white"
         android:ems="10"
         android:hint="Enter Genre"
         android:inputType="textPersonName"
-        android:textSize="12dp"
         android:paddingLeft="12dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496" />
+        app:layout_constraintVertical_bias="0.562" />
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="77dp"
-        android:layout_height="31dp"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
         android:background="@drawable/rounded_bg"
         android:fontFamily="@font/mouse"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <ImageButton
         android:id="@+id/exit_button"
