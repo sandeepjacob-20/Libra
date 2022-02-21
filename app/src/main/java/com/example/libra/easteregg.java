@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class easteregg extends AppCompatActivity {
-    private ImageButton back,qr;
+    private ImageButton qr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +23,6 @@ public class easteregg extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        back = (ImageButton) findViewById(R.id.back_button);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                System.exit(0);
-            }
-        });
+
     }
 }

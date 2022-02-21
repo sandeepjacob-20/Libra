@@ -9,8 +9,8 @@ android {
         applicationId "com.example.libra"
         minSdk 21
         targetSdk 31
-        versionCode 3
-        versionName "3.0"
+        versionCode 22
+        versionName "22.2.22"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

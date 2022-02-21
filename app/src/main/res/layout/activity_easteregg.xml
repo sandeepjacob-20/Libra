@@ -7,30 +7,18 @@
     android:background="@drawable/bg_gradient"
     tools:context=".easteregg">
 
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="100dp"
-        android:layout_height="52dp"
-        android:background="@drawable/rounded_bg_black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907"
-        app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
 
     <ImageButton
         android:id="@+id/qr_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="362dp"
+        android:layout_height="390dp"
         android:background="@drawable/rounded_bg_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361"
-        app:srcCompat="@drawable/bg_qr" />
+        app:layout_constraintVertical_bias="0.434"
+        app:srcCompat="@drawable/icon_bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
